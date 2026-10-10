@@ -40,7 +40,7 @@ export function Passage({ selectedDifficulty, isTyping, setAccuracy, userTyping,
                     return;
                 }
 
-                if (!/^[a-zA-Z,. ]$/.test(event.key)) {
+                if (!/^[a-zA-Z,. —':;]$/.test(event.key)) {
                     event.preventDefault();
                     return;
                 }
