@@ -1,0 +1,73 @@
+/* whole design ↓↓↓ */
+
+.typing-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.typing-screen main {
+  flex: 1;
+  padding: 0.8rem;
+}
+
+/* passage ↓↓↓ */
+
+.passage {
+  font-size: 2.2rem;
+  color: var(--Neutral-400);
+  line-height: 1.3;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--Neutral-800);
+  min-height: 485px;
+
+  position: relative;
+}
+
+/* restart button ↓↓↓ */
+
+.restart-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restart-button {
+  background-color: var(--Neutral-800);
+  border: none;
+  color: var(--Neutral-0);
+  font-family: inherit;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  margin: 1.9rem 0 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.restart-text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--Neutral-0);
+}
+
+.restart-image {
+  width: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .typing-screen {
+      height: 100vh;
+  }
+
+  .typing-screen main {
+    height: calc(100vh - 60px);
+    padding: 1.5rem;
+  }
+
+  .restart-button {
+    margin: 0.9rem 0;
+  }
+}

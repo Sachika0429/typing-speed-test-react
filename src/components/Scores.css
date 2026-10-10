@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* score table ↓↓↓ */
+
+.current-state {
+    display: flex;
+    margin-bottom: 0.9rem;
+}
+
+.current-state>div {
+    flex: 1;
+}
+
+.current-state>div:not(:last-child) {
+    border-right: 2px solid var(--Neutral-800);
+}
+
+.current-state-box {
+    padding: 0.3rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title {
+    color: var(--Neutral-400);
+    font-size: 0.9rem;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.score.accuracy-color {
+    color: var(--Red-500);
+}
+
+.score.timer {
+    color: var(--Yellow-400);
+}
+
+/* desktop HTML design ↓↓↓ */
+
+.current-state-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Neutral-400);
+    padding-bottom: 0.7rem;
+}
+
+.current-state-boxes {
+    display: flex;
+    gap:1.5rem;
+}
+
+.current-state-box-desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.selectors-desktop {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.difficulty-selector-desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.mode-selector-desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.difficulty-selector-desktop > p,
+.mode-selector-desktop > p {
+    color: var(--Neutral-400);
+    font-size: 0.8rem;
+}
+
+.buttons-desktop button {
+    background-color: var(--Neutral-900);
+    border-color: var(--Neutral-0);
+    color: var(--Neutral-0);
+    margin-right: 0.3rem;
+    padding: 0.2rem;
+    border-radius: 7px;
+    border: 1px solid var(--Neutral-0);
+    font-family: inherit;
+    font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .current-state-boxes {
+        gap: 3rem;
+    }
+
+    .selectors-desktop p {
+        font-size: 1rem;
+        margin-right: 0.7rem;
+    }
+
+    .selectors-desktop button {
+        font-size: 0.8rem;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .selectors-desktop button {
+        margin-right: 0.4rem;
+    }
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* top logos ↓↓↓ */
+
+.logo-best-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.best-wpm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.trophy {
+  width: 1.3rem;
+}
+
+.best {
+  color: var(--Neutral-400);
+}
+
+/* desktop design ↓↓↓ */
+
+.header-logo-desktop {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.header-logo-text-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.header-logo-text-desktop-small {
+  color: var(--Neutral-400);
+}

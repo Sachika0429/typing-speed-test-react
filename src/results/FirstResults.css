@@ -1,0 +1,23 @@
+.first-test .test-again-box {
+    margin: 2.5rem auto;
+    width: 245px;
+}
+
+@media (min-width: 768px) {
+    .first-test .test-again-box {
+        margin: 2rem auto;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .first-test {
+        position: relative;
+    }
+
+    .first-test .yellow-star {
+        position: absolute;
+        top: 490px;
+        width: 3rem;
+    }
+}

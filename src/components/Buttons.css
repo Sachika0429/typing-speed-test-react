@@ -1,0 +1,28 @@
+/* selector buttons ↓↓↓ */
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--Neutral-800);
+    padding-bottom: 1rem;
+}
+
+.difficulty-selector,
+.mode-selector {
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid var(--Neutral-400);
+    color: var(--Neutral-0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.select-arrow {
+    width: 0.8rem;
+}

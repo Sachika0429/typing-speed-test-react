@@ -1,0 +1,34 @@
+/*
+.passage-box {
+    position: relative;
+}
+
+.passage-text {
+    margin: 0;
+    padding: 0;
+}
+
+.passage-user-typing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+*/
+
+.passage-user-typing .current {
+    background-color: var(--Bg-light);
+    border-radius: 6px;
+}
+
+.passage-user-typing .correct {
+    color: var(--Green-500);
+}
+
+.passage-user-typing .wrong {
+    color: var(--Red-500);
+    text-decoration: underline;
+}

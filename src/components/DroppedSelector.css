@@ -1,0 +1,71 @@
+/* dropped-selector */
+
+.passage-position {
+  overflow: hidden scroll;
+}
+
+.dropped-selector-box {
+  display: flex;
+  gap: 0.5rem;
+
+  position: absolute;
+  width: 100%;
+  top: -0.5rem;
+}
+
+.dropped-difficulty-selector,
+.dropped-mode-selector {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Neutral-800);
+
+  border-radius: 0.6rem;
+}
+
+.dropped-difficulty-selector {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropped-difficulty-selector.open {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 999;
+}
+
+.dropped-mode-selector {
+  height: fit-content;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropped-mode-selector.open {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 999;
+}
+
+label {
+  font-size: 1rem;
+  color: var(--Neutral-0);
+  font-weight: normal;
+  padding: 0.6rem;
+}
+
+label:not(:last-child) {
+  border-bottom: 1px solid var(--Neutral-500);
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 1px solid var(--Neutral-0);
+  border-radius: 50%;
+  margin-right: 0.7rem;
+}
+
+input[type="radio"]:checked {
+  border: 0.25rem solid var(--Blue-400);
+}
